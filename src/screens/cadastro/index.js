@@ -11,7 +11,7 @@ function Cadastro() {
       <Input placeholder="Nome"></Input>
       <Input placeholder="Email"></Input>
       <Input placeholder="Senha"></Input>
-      <Button onClick={() => history.push("login")}>Cadastrar-se</Button>
+      <Button onClick={() => history.push("/")}>Cadastrar-se</Button>
     </Container>
   );
 }

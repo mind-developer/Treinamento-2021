@@ -1,20 +1,19 @@
-import React from 'react';
-//import { useHistory } from 'react-router-dom';
+import React from "react";
+import { useHistory } from "react-router-dom";
 
-import { Button, Container, Input, Title} from './styles';
+import { Button, Container, Input, Title } from "./styles";
 
-function cadastro() {
+function Cadastro() {
+  const history = useHistory();
   return (
-  <Container>
-    
-   <Title>Cadastro</Title>
-  <Input placeholder = 'Nome'></Input>
-  <Input placeholder = 'Email'></Input>
-  <Input placeholder = 'Senha'></Input>
-  <Button>Cadastrar-se</Button>
-  </Container>
+    <Container>
+      <Title>Cadastro</Title>
+      <Input placeholder="Nome"></Input>
+      <Input placeholder="Email"></Input>
+      <Input placeholder="Senha"></Input>
+      <Button onClick={() => history.push("Login")}>Cadastrar-se</Button>
+    </Container>
   );
-
 }
 
-export default cadastro;
+export default Cadastro;

@@ -1,17 +1,11 @@
 import { Route, Switch, BrowserRouter } from "react-router-dom";
-import './App.css';
+import "./App.css";
+import Routes from "./routes/routes";
 import cadastro from "./screens/cadastro";
-import Home from './screens/Home';
+import Home from "./screens/Home";
 
 function App() {
-  return (
-    <BrowserRouter>
-      <Switch>
-        <Route exact path="/" component={Home}/>
-        <Route exact path="/cadastro" component={cadastro}/>
-      </Switch>
-    </BrowserRouter>
-  );
+  return <Routes />;
 }
 
 export default App;

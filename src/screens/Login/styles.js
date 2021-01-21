@@ -24,6 +24,9 @@ export const Input = styled.input`
     &:hover{
         border-color: var(--primary);
     }
+    &:focus{
+        border-color: var(--primary);
+    }
 `
 
 export const Button = styled.button`

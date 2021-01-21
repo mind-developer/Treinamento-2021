@@ -4,3 +4,14 @@
     --black: #000000;
     --white: #ffffff;
 }
+
+.profile{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    height: 100vh;
+    font-family: sans-serif;
+    background: var(--second);
+    margin: -8px;
+}
